@@ -9,8 +9,8 @@ const Summary = () => (
         understanding of and experience with SCRUM methodology.
       </p>
       <p>
-        Results-driven team player with well-developed soft skills. Seeking a
-        position to enhance own capabilities and add value to your team.
+        Results-driven team player with well-developed soft skills. Seeking
+        opportunities to enhance own capabilities and add value to your team.
       </p>
     </div>
   </Section>
