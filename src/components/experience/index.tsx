@@ -1,4 +1,4 @@
-import Section from '../common/Section';
+import { Section } from '../common';
 import First from './First';
 import Second from './Second';
 import Third from './Third';

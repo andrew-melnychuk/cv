@@ -14,7 +14,7 @@ import { ReactComponent as SASSLogo } from '../../../resources/sass.svg';
 import { ReactComponent as SonarLogo } from '../../../resources/sonar.svg';
 import { ReactComponent as TSLogo } from '../../../resources/ts.svg';
 import { ReactComponent as WebpackLogo } from '../../../resources/webpack.svg';
-import Section from '../common/Section';
+import { Section } from '../common';
 
 const SkillLabelMap = {
   JS: {
