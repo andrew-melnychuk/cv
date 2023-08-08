@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import { Experience, Header, Skills, Summary } from './components';
 import { useLocalStorage, usePrint } from './utils';
 
+const DEFAULT_THEME = 'light';
+
 const ThemeSwitcher = () => {
   const themeClass = document.documentElement.classList[0];
   const [theme, setTheme] = useLocalStorage('theme', themeClass);
@@ -28,6 +30,9 @@ const ThemeSwitcher = () => {
   return (
     <div className="print-hidden theme-switcher-wrapper">
       <button
+        aria-label={`theme-switcher, current theme is ${
+          theme || DEFAULT_THEME
+        }`}
         id="theme-switcher"
         className={theme === 'dark' ? 'dark-theme' : 'light-theme'}
         onClick={handleThemeSwitch}

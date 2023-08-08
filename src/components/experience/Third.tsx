@@ -13,7 +13,7 @@ const Third = () => {
   return (
     <Experience
       technologies={TECHNOLOGIES}
-      duration="11 months"
+      duration="12 months"
       employer="SoftServe"
       position="Front-end developer"
       description={
