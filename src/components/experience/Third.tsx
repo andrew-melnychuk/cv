@@ -1,3 +1,4 @@
+import { getTimeDiff } from '../../utils';
 import Experience from './Experience';
 
 const TECHNOLOGIES = [
@@ -9,11 +10,13 @@ const TECHNOLOGIES = [
   'Jest',
 ];
 
+const startDate = new Date('September 2022');
+
 const Third = () => {
   return (
     <Experience
       technologies={TECHNOLOGIES}
-      duration="12 months"
+      duration={`${getTimeDiff(startDate, 'month')} months`}
       employer="SoftServe"
       position="Front-end developer"
       description={
