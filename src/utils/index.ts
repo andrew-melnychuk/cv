@@ -21,5 +21,5 @@ export const getExperience = (start: Date) => {
     const exp = getTimeDiff(start, 'year', false);
     const decimalPart = exp - Math.floor(exp);
 
-    return decimalPart > 8 ? `${Math.ceil(exp)}` : decimalPart > 5 ? `close to ${Math.ceil(exp)}` : decimalPart > 2 ? `more than ${Math.floor(exp)}` : `${Math.floor(exp)}`;
+    return decimalPart > 0.8 ? `${Math.ceil(exp)}` : decimalPart > 0.5 ? `close to ${Math.ceil(exp)}` : decimalPart > 0.2 ? `more than ${Math.floor(exp)}` : `${Math.floor(exp)}`;
 } 
