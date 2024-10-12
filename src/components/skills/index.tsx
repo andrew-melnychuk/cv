@@ -1,17 +1,17 @@
 import { FunctionComponent, SVGProps } from 'react';
 import { ReactComponent as CarbonLogo } from '../../../resources/carbon.svg';
-import { ReactComponent as CSSLogo } from '../../../resources/css.svg';
 import { ReactComponent as DockerLogo } from '../../../resources/docker.svg';
 import { ReactComponent as FigmaLogo } from '../../../resources/figma.svg';
 import { ReactComponent as GitLogo } from '../../../resources/git.svg';
-import { ReactComponent as HTMLLogo } from '../../../resources/html.svg';
 import { ReactComponent as JSLogo } from '../../../resources/js.svg';
 import { ReactComponent as MUILogo } from '../../../resources/mui.svg';
+import { ReactComponent as NextJsLogo } from '../../../resources/nextjs.svg';
 import { ReactComponent as NodeLogo } from '../../../resources/node.svg';
 import { ReactComponent as ReactLogo } from '../../../resources/react.svg';
 import { ReactComponent as ReduxLogo } from '../../../resources/redux.svg';
 import { ReactComponent as SASSLogo } from '../../../resources/sass.svg';
 import { ReactComponent as SonarLogo } from '../../../resources/sonar.svg';
+import { ReactComponent as TailwindLogo } from '../../../resources/tailwind.svg';
 import { ReactComponent as TSLogo } from '../../../resources/ts.svg';
 import { ReactComponent as WebpackLogo } from '../../../resources/webpack.svg';
 import { Section } from '../common';
@@ -29,13 +29,21 @@ const SkillLabelMap = {
     logo: ReactLogo,
     label: 'React',
   },
-  REDUX: {
-    logo: ReduxLogo,
-    label: 'Redux',
+  NEXT: {
+    logo: NextJsLogo,
+    label: 'Next.js',
   },
   NODE: {
     logo: NodeLogo,
     label: 'Node',
+  },
+  REDUX: {
+    logo: ReduxLogo,
+    label: 'Redux',
+  },
+  TAILWIND: {
+    logo: TailwindLogo,
+    label: 'Tailwind',
   },
   MUI: {
     logo: MUILogo,
@@ -60,14 +68,6 @@ const SkillLabelMap = {
   SASS: {
     logo: SASSLogo,
     label: 'SASS',
-  },
-  CSS: {
-    logo: CSSLogo,
-    label: 'CSS',
-  },
-  HTML: {
-    logo: HTMLLogo,
-    label: 'HTML',
   },
   GIT: {
     logo: GitLogo,

@@ -2,8 +2,11 @@ import { getTimeDiff } from '../../utils';
 import Experience from './Experience';
 
 const TECHNOLOGIES = [
+  'Typescript',
   'React',
   'Material UI',
+  'TanStack Query',
+  'Recharts',
   'Axios',
   'React i18next',
   'React Testing Library',
