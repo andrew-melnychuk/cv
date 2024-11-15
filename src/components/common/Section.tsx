@@ -7,7 +7,7 @@ const Section = ({
   children: ReactNode;
   title: string;
 }) => (
-  <div className="mb-16 p-4 shadow-md">
+  <div className="section mb-16 p-4 shadow-md">
     <h2 className="mb-6 break-after-avoid text-center text-2xl font-bold uppercase">
       {title}
     </h2>

@@ -81,7 +81,7 @@ body {
     inset 0 -1px 1px rgb(255 255 255 / 0.2);
 }
 
-.logo-icon {
+.logo-icon:not(.no-recolor) {
   fill: rgb(var(--text-color));
 }
 
@@ -102,6 +102,10 @@ body {
     margin: 8mm 0 0;
     padding: 0;
     background-color: #fff;
+  }
+
+  .section {
+    box-shadow: none;
   }
 
   .experience {

@@ -49,9 +49,14 @@ const PrintButton = ({ onPrint }: { onPrint: () => void }) => (
   </button>
 );
 
+// TODO: revise contacts, add more???
+// TODO: update experience (replace project description with personal responsibilities)
+// TODO: revise skills
+// TODO: revise margin after sections title
+
 export default function App() {
   const ref = useRef(null);
-  const { printHandler } = usePrint(ref, 'cv', 'andrew_melnychuk_cv');
+  const { printHandler } = usePrint(ref, 'cv', 'CV_Andrew_Melnychuk_Front-end');
 
   return (
     <div ref={ref} className="cv container">
