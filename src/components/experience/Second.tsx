@@ -24,22 +24,12 @@ const Second = () => {
       duration="19 months"
       employer="outstaffed to IBM"
       position="Full-stack developer"
-      description={
-        <>
-          <p>
-            Large B2B oriented application based on machine-learning predictive
-            models. Project consists of multiple independent processes and micro
-            services hosted on AWS and IBM Cloud. Aims to help utility companies
-            proactively prepare response to weather events, improve restoration
-            time and boost customer and regulatory satisfaction.
-          </p>
-          <p>
-            Worked alongside management, design, and DS teams throughout all
-            process from receiving client requests to delivering
-            high-functioning solutions.
-          </p>
-        </>
-      }
+      description={[
+        'implemented lazy loading and caching strategies to optimize initial load and improve overall application performance.',
+        'followed modern design patterns to enhance application performance and streamline the development process.',
+        'designed and developed RESTful APIs to facilitate seamless communication between front-end and back-end systems.',
+        'collaborated with stakeholders to gather and document detailed project requirements, ensuring alignment with business objectives.',
+      ]}
     />
   );
 };

@@ -12,6 +12,7 @@ import { ReactComponent as ReduxLogo } from '../../../resources/redux.svg';
 import { ReactComponent as SASSLogo } from '../../../resources/sass.svg';
 import { ReactComponent as SonarLogo } from '../../../resources/sonar.svg';
 import { ReactComponent as TailwindLogo } from '../../../resources/tailwind.svg';
+import { ReactComponent as TanStackQueryLogo } from '../../../resources/tanstack-query.svg';
 import { ReactComponent as TSLogo } from '../../../resources/ts.svg';
 import { ReactComponent as WebpackLogo } from '../../../resources/webpack.svg';
 import { Section } from '../common';
@@ -35,11 +36,15 @@ const SkillLabelMap = {
   },
   NODE: {
     logo: NodeLogo,
-    label: 'Node',
+    label: 'Node.js',
   },
   REDUX: {
     logo: ReduxLogo,
     label: 'Redux',
+  },
+  TAN_STACK: {
+    logo: TanStackQueryLogo,
+    label: 'TanStack Query',
   },
   TAILWIND: {
     logo: TailwindLogo,
@@ -73,10 +78,10 @@ const SkillLabelMap = {
     logo: GitLogo,
     label: 'Git',
   },
-  FIGMA: {
-    logo: FigmaLogo,
-    label: 'Figma',
-  },
+  // FIGMA: {
+  //   logo: FigmaLogo,
+  //   label: 'Figma',
+  // },
 };
 
 const Skill = ({
@@ -97,7 +102,7 @@ const Skill = ({
 export const Skills = () => {
   return (
     <Section title="skills">
-      <div className="grid grid-cols-3 gap-8 a4:grid-cols-5">
+      <div className="skills-grid grid grid-cols-3 gap-8 a4:grid-cols-5">
         {Object.entries(SkillLabelMap).map(([key, value]) => (
           <Skill key={key} Logo={value.logo} label={value.label} />
         ))}

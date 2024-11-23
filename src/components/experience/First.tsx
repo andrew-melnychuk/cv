@@ -16,7 +16,11 @@ const First = () => (
     duration="4 months"
     employer="Social project"
     position="Front-end developer"
-    description="Responsible for implementing UI from design mockups."
+    description={[
+      'leveraged TypeScript with React to improve code reliability, maintainability, and developer productivity.',
+      'designed and implemented responsive layouts using CSS preprocessors, ensuring a seamless user experience across devices.',
+      'collaborated with back-end developers to define API endpoints, data structures, and error handling mechanisms.',
+    ]}
   />
 );
 
