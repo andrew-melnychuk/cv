@@ -102,7 +102,7 @@ const Skill = ({
 export const Skills = () => {
   return (
     <Section title="skills">
-      <div className="grid grid-cols-3 gap-8 a4:grid-cols-5">
+      <div className="skills-grid grid grid-cols-3 gap-8 a4:grid-cols-5">
         {Object.entries(SkillLabelMap).map(([key, value]) => (
           <Skill key={key} Logo={value.logo} label={value.label} />
         ))}

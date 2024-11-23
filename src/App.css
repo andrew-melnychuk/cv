@@ -5,8 +5,8 @@
 :root {
   --background-color: 250 250 250;
   --text-color: 39 39 42;
-  --secondary-text-color: 82 82 91;
-  --label-text-color: 161 161 170;
+  --secondary-text-color: 60, 60, 63;
+  --label-text-color: 110, 110, 115;
   --shadow-color: 0 0 0;
   --theme-switcher-background-color: 240 240 240;
   --theme-switcher-shadow: inset 0 1px 5px rgb(144 144 144 / 0.1),
@@ -16,8 +16,8 @@
 .dark {
   --background-color: 20 20 20;
   --text-color: 230 230 230;
-  --secondary-text-color: 161 161 170;
-  --label-text-color: 113 113 122;
+  --secondary-text-color: 185, 185, 194;
+  --label-text-color: 130, 130, 140;
   --shadow-color: 255 255 255;
   --theme-switcher-background-color: 54 54 54;
   --theme-switcher-shadow: inset 0 2px 5px rgb(34 34 34 / 0.1),
@@ -26,7 +26,7 @@
 
 html {
   -webkit-print-color-adjust: exact;
-  -webkit-filter: opacity(1);
+  /*-webkit-filter: opacity(1);*/
 }
 
 body {
@@ -89,6 +89,10 @@ body {
   box-shadow: 0 1px 0 rgb(var(--text-color) / 0.1);
 }
 
+.experience-item {
+  list-style-type: disc;
+}
+
 .experience:last-of-type {
   box-shadow: none;
 }
@@ -99,18 +103,32 @@ body {
   }
 
   .cv {
-    margin: 8mm 0 0;
-    padding: 0;
+    margin: 0;
+    padding: 8mm 0 0;
     background-color: #fff;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .section {
     box-shadow: none;
+    margin-bottom: 20px;
+  }
+
+  .section:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .experience {
     box-shadow: none;
-    border-bottom: 1px solid rgb(var(--text-color) / 0.1);
+  }
+
+  .technology {
+    box-shadow: none;
+    border-bottom: 1px solid rgb(var(--text-color) / 0.2);
   }
 
   .experience:last-of-type {
@@ -119,6 +137,6 @@ body {
 }
 
 @page {
-  margin: 8mm;
-  padding-left: 0;
+  /*margin: 8mm;*/
+  padding: 8mm;
 }
