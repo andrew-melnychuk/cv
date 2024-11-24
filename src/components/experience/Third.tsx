@@ -13,7 +13,7 @@ const TECHNOLOGIES = [
   'Jest',
 ];
 
-const startDate = new Date('September 2022');
+const startDate = new Date('2022-09-01');
 
 const Third = () => {
   return (

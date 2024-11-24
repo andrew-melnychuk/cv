@@ -26,9 +26,11 @@ const Experience = ({
           {typeof description === 'string' ? (
             <p>{description}</p>
           ) : (
-            <ul>
-              {description.map((item) => (
-                <li className="experience-item">{item}</li>
+            <ul className="ml-4 list-outside list-disc">
+              {description.map((item, i) => (
+                <li key={i} className="pl-0">
+                  {item}
+                </li>
               ))}
             </ul>
           )}
