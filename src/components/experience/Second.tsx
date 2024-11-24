@@ -23,7 +23,7 @@ const Second = () => {
       technologies={TECHNOLOGIES}
       duration="19 months"
       employer="outstaffed to IBM"
-      position="Full-stack developer"
+      position="Full-stack Developer"
       description={[
         'implemented lazy loading and caching strategies to optimize initial load and improve overall application performance.',
         'followed modern design patterns to enhance application performance and streamline the development process.',

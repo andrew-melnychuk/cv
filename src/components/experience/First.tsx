@@ -15,7 +15,7 @@ const First = () => (
     technologies={TECHNOLOGIES}
     duration="4 months"
     employer="Social project"
-    position="Front-end developer"
+    position="Front-end Developer"
     description={[
       'leveraged TypeScript with React to improve code reliability, maintainability, and developer productivity.',
       'designed and implemented responsive layouts using CSS preprocessors, ensuring a seamless user experience across devices.',

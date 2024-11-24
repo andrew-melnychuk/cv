@@ -21,7 +21,7 @@ const Third = () => {
       technologies={TECHNOLOGIES}
       duration={`${getTimeDiff(startDate, 'month')} months`}
       employer="SoftServe"
-      position="Front-end developer"
+      position="Front-end Developer"
       description={[
         'improved user experience by integrating Virtuoso for efficient rendering of large lists, resulting in smoother scrolling and better performance on resource-constrained devices.',
         'enhanced accessibility across the platform by following WCAG guidelines, making the application usable for a wider audience.',
