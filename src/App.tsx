@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
+import cvFile from '../resources/files/CV_Andrew_Melnychuk_Front-end.pdf';
 import { Experience, Header, Skills, Summary } from './components';
-import { useLocalStorage, usePrint } from './utils';
+import { useLocalStorage } from './utils';
 
 const DEFAULT_THEME = 'light';
 
@@ -40,32 +41,30 @@ const ThemeSwitcher = () => {
     </div>
   );
 };
-const PrintButton = ({ onPrint }: { onPrint: () => void }) => (
-  <button
-    className="print-hidden m-auto flex px-8 py-4 shadow-lg duration-500 hover:shadow-sm"
-    onClick={onPrint}
+
+const PrintButton = () => (
+  <a
+    className="print-hidden m-auto flex w-fit px-8 py-4 shadow-lg duration-500 hover:shadow-sm"
+    href={cvFile}
+    download="CV_Andrew_Melnychuk_Front-end"
+    aria-label="Download the PDF file"
   >
-    Print as PDF
-  </button>
+    Download PDF
+  </a>
 );
 
 // TODO: revise contacts, add more???
-// TODO: update experience (replace project description with personal responsibilities)
-// TODO: revise skills
 // TODO: revise margin after sections title
 
 export default function App() {
-  const ref = useRef(null);
-  const { printHandler } = usePrint(ref, 'cv', 'CV_Andrew_Melnychuk_Front-end');
-
   return (
-    <div ref={ref} className="cv container">
+    <div className="cv container">
       <ThemeSwitcher />
       <Header />
       <Summary />
       <Skills />
       <Experience />
-      <PrintButton onPrint={printHandler} />
+      <PrintButton />
     </div>
   );
 }
