@@ -133,6 +133,6 @@ body {
 }
 
 @page {
-  /*margin: 8mm;*/
+  margin: 0;
   padding: 8mm;
 }
