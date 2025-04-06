@@ -6,7 +6,7 @@ const TECHNOLOGIES = [
   'React',
   'Redux',
   'Material UI',
-  'Carbon Design System',
+  'Carbon',
   'Webpack',
   'Node.js',
   'Express',

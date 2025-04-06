@@ -100,17 +100,26 @@ body {
 
   .cv {
     margin: 0;
-    padding: 8mm 0 0;
+    padding: 3mm 0 0;
     background-color: #fff;
+  }
+
+  .text-secondary {
+    color: rgb(var(--text-color));
   }
 
   .skills-grid {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-gap: 28px;
+  }
+
+  .header {
+    margin-bottom: 10px;
   }
 
   .section {
     box-shadow: none;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
   .section:last-of-type {
@@ -134,5 +143,5 @@ body {
 
 @page {
   margin: 0;
-  padding: 8mm;
+  padding: 8mm 8mm 4mm;
 }
