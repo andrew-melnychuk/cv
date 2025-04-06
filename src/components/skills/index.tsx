@@ -56,7 +56,7 @@ const SkillLabelMap = {
   },
   CARBON: {
     logo: CarbonLogo,
-    label: 'Carbon Design System',
+    label: 'Carbon',
   },
   DOCKER: {
     logo: DockerLogo,

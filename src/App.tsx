@@ -50,8 +50,6 @@ const PrintButton = ({ onPrint }: { onPrint: () => void }) => (
 );
 
 // TODO: revise contacts, add more???
-// TODO: update experience (replace project description with personal responsibilities)
-// TODO: revise skills
 // TODO: revise margin after sections title
 
 export default function App() {

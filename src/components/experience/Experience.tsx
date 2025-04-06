@@ -15,7 +15,7 @@ const Experience = ({
   description,
 }: Props) => {
   return (
-    <div className="experience mt-4 grid break-inside-avoid grid-cols-11 gap-4 pb-4 last:pb-0">
+    <div className="experience mt-4 grid grid-cols-11 gap-4 pb-4 last:pb-0">
       <div className="col-span-3">
         <h3 className="font-bold">{position}</h3>
         <p className="text-secondary">{employer}</p>

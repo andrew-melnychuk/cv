@@ -6,7 +6,7 @@ const Summary = () => (
   <Section title="summary">
     <div className="text-secondary">
       <p>
-        {`Senior Frontend Developer with ${getExperience(
+        {`Front-end developer with ${getExperience(
           careerStart,
         )} years of experience specializing in React and TypeScript. Skilled in creating dynamic, high-performance user interfaces with a focus on user experience. Proficient in creating scalable and reusable components, front-end
         optimization, and backend integration. Known for a proactive,
